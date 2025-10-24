@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Burger & Pastry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luxury Burger & Pastry</div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome To <span class="highlight">Luxury</span> Burger<br> & Pastry</h1>
+                <p><span class="elegant">Exquisite</span> Fine Dining <span class="elegant">Experience</span></p>
+                <a href="#reservations" class="btn">Book a Table</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Founded in 2010, Luxury Burger & Pastry has been serving exquisite cuisine in a warm and sophisticated atmosphere. Our passion for culinary excellence drives us to create memorable dining experiences for our guests.</p>
+                        <p>Our executive chef, Abdurezak Tesfaye, brings over 20 years of experience from renowned restaurants across Europe. His innovative approach to traditional recipes results in unique flavors that delight the senses.</p>
+                        <p>At Luxury Burger & Pastry, we believe in using only the finest, locally-sourced ingredients to ensure freshness and support our community farmers.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="food ball5.jpg" alt="Elegance Restaurant Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="starters">Starters</button>
+                    <button class="menu-tab" data-category="main">Main Courses</button>
+                    <button class="menu-tab" data-category="desserts">Desserts</button>
+                    <button class="menu-tab" data-category="drinks">Drinks</button>
+                </div>
+                
+                <div class="menu-content active" id="starters">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="starter1.webp" alt="Bruschetta">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Bruschetta</h3>
+                                <p>Toasted bread topped with tomatoes, fresh basil, and garlic</p>
+                                <span class="price">$8.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="starter2.webp" alt="Calamari">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Crispy Calamari</h3>
+                                <p>Lightly fried squid served with lemon aioli</p>
+                                <span class="price">$12.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="starter3.webp" alt="Caprese Salad">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Caprese Salad</h3>
+                                <p>Fresh mozzarella, tomatoes, and basil with balsamic glaze</p>
+                                <span class="price">$10.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="main">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="burger2.webp" alt="Filet Mignon">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Filet Mignon</h3>
+                                <p>8oz beef tenderloin with red wine reduction and truffle mashed potatoes</p>
+                                <span class="price">$34.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="burger3.webp" alt="Grilled Salmon">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Grilled Salmon</h3>
+                                <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                                <span class="price">$28.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="burger4.jpg" alt="Mushroom Risotto">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Mushroom Risotto</h3>
+                                <p>Creamy arborio rice with wild mushrooms and parmesan</p>
+                                <span class="price">$22.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="Desserts1.jpeg" alt="Chocolate Soufflé">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Chocolate Soufflé</h3>
+                                <p>Warm chocolate soufflé with vanilla ice cream</p>
+                                <span class="price">$9.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="dessert2.jpeg" alt="Crème Brûlée">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Crème Brûlée</h3>
+                                <p>Classic vanilla custard with caramelized sugar top</p>
+                                <span class="price">$8.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="dessert3.avif" alt="Tiramisu">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Tiramisu</h3>
+                                <p>Coffee-soaked ladyfingers with mascarpone cream</p>
+                                <span class="price">$8.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="drinks">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="cold bevera1.jpg" alt="Red Wine">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Fine Wines</h3>
+                                <p>Selection of premium red and white wines</p>
+                                <span class="price">From $12.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="refresh1.jpg" alt="Craft Cocktails">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Craft Cocktails</h3>
+                                <p>Handcrafted signature cocktails</p>
+                                <span class="price">From $10.95</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hot-beverages.jpg" alt="Espresso">
+                            </div>
+                            <div class="menu-item-info">
+                                <h3>Premium Coffee</h3>
+                                <p>Espresso, cappuccino, and specialty coffee drinks</p>
+                                <span class="price">From $4.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservations Section -->
+        <section id="reservations" class="reservations">
+            <div class="container">
+                <h2 class="section-title">Make a Reservation</h2>
+                <div class="reservation-content">
+                    <div class="reservation-info">
+                        <h3>Reserve Your Table</h3>
+                        <p>Experience the finest dining at Luxury Burger & Pastry. We recommend making reservations at least 48 hours in advance.</p>
+                        <p>For parties of 6 or more, please call us directly at <strong>+251 92429 3163</strong>.</p>
+                    </div>
+                    <div class="reservation-form">
+                        <form id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- REQUIRED: Access Key -->
+                            <input type="hidden" name="access_key" value="ac1b8bb2-45a2-4504-8829-f6a3e59ad91a">
+
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                  
+                        <img src="burger2.webp" alt="Food Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="burger3.webp" alt="Food Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="food gall4.jpg" alt="Food Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="food gall1.jpg" alt="Restaurant Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pastrychecake2.jpg" alt="Restaurant Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="burger4.jpg" alt="Restaurant Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="food ball3.avif" alt="Food Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="food gall2.jpeg" alt="Food Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The dining experience at Luxury Burger & Pastry was truly exceptional. The food was exquisite, and the service was impeccable. I highly recommend the filet mignon!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Abdurezak Tesfaye</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"From the moment we walked in, we were treated like royalty. The ambiance is sophisticated yet comfortable, and the food is simply divine. Will definitely be returning!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Zakira Hussen</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The chef's tasting menu was a culinary journey I won't soon forget. Each course was better than the last, and the wine pairings were perfect. A must-visit for food enthusiasts!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Fuad Muhammed</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Ethiopia Addis Abeba<br>Asossa, as 1000</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Monday - Friday: 5:00 PM - 11:00 PM<br>Saturday - Sunday: 12:00 PM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Reservations</h3>
+                                <p>Phone:+251 924 293 163<br>Email:abdurezaktesfaye998@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2176673384526!2d-73.98784492426866!3d40.75790657138928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca05ca48ab0c525!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1682538024800!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Luxury Burger & Pastry</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservations">Reservations</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Luxury Burger & Pastry Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
